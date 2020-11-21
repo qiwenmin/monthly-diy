@@ -1,0 +1,5 @@
+*cache*
+*bak
+.DS_Store
+*.zip
+output/
