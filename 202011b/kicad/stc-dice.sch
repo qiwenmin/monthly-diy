@@ -1,0 +1,367 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "STC Dice"
+Date "2020-11-29"
+Rev "v1"
+Comp "BG1REN"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bg1ren:STC15W104 U201
+U 1 1 5FC3C1AC
+P 2850 2600
+F 0 "U201" H 2850 3015 50  0000 C CNN
+F 1 "STC15W104" H 2850 2924 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3100 2600 50  0001 C CNN
+F 3 "" H 3100 2600 50  0001 C CNN
+	1    2850 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT201
+U 1 1 5FC3D0F2
+P 1550 2600
+F 0 "BT201" H 1668 2696 50  0000 L CNN
+F 1 "3V" H 1668 2605 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_1060_1x2032" V 1550 2660 50  0001 C CNN
+F 3 "~" V 1550 2660 50  0001 C CNN
+	1    1550 2600
+	1    0    0    -1  
+$EndComp
+Text Label 1550 2400 1    50   ~ 0
+VCC_200
+Text Label 1550 2700 3    50   ~ 0
+GND_200
+Text Label 2500 2550 2    50   ~ 0
+VCC_200
+Text Label 2500 2750 2    50   ~ 0
+GND_200
+Text Label 2500 2450 2    50   ~ 0
+SW_200
+Text Label 3200 2750 0    50   ~ 0
+A_200
+Text Label 3200 2650 0    50   ~ 0
+B_200
+Text Label 3200 2550 0    50   ~ 0
+C_200
+Text Label 3200 2450 0    50   ~ 0
+D_200
+NoConn ~ 2500 2650
+$Comp
+L Switch:SW_Push SW_201
+U 1 1 5FC446BB
+P 3900 2600
+F 0 "SW_201" V 3946 2552 50  0000 R CNN
+F 1 "ROLL" V 3855 2552 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 3900 2800 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2600
+	0    -1   -1   0   
+$EndComp
+Text Label 3900 2400 0    50   ~ 0
+SW_200
+Text Label 3900 2800 0    50   ~ 0
+GND_200
+$Comp
+L Device:LED D201
+U 1 1 5FC46A80
+P 1500 3650
+F 0 "D201" V 1539 3532 50  0000 R CNN
+F 1 "LED_A" V 1448 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1500 3650 50  0001 C CNN
+F 3 "~" H 1500 3650 50  0001 C CNN
+	1    1500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R201
+U 1 1 5FC48D22
+P 1500 4050
+F 0 "R201" H 1570 4096 50  0000 L CNN
+F 1 "4.7K" H 1570 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1430 4050 50  0001 C CNN
+F 3 "~" H 1500 4050 50  0001 C CNN
+	1    1500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R207
+U 1 1 5FC5199A
+P 4500 4050
+F 0 "R207" H 4570 4096 50  0000 L CNN
+F 1 "4.7K" H 4570 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4430 4050 50  0001 C CNN
+F 3 "~" H 4500 4050 50  0001 C CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D207
+U 1 1 5FC51994
+P 4500 3650
+F 0 "D207" V 4539 3532 50  0000 R CNN
+F 1 "LED_D" V 4448 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4500 3650 50  0001 C CNN
+F 3 "~" H 4500 3650 50  0001 C CNN
+	1    4500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R206
+U 1 1 5FC4FB9A
+P 4000 4050
+F 0 "R206" H 4070 4096 50  0000 L CNN
+F 1 "4.7K" H 4070 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3930 4050 50  0001 C CNN
+F 3 "~" H 4000 4050 50  0001 C CNN
+	1    4000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D206
+U 1 1 5FC4FB94
+P 4000 3650
+F 0 "D206" V 4039 3532 50  0000 R CNN
+F 1 "LED_D" V 3948 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 3650 50  0001 C CNN
+F 3 "~" H 4000 3650 50  0001 C CNN
+	1    4000 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R205
+U 1 1 5FC4EFFA
+P 3500 4050
+F 0 "R205" H 3570 4096 50  0000 L CNN
+F 1 "4.7K" H 3570 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3430 4050 50  0001 C CNN
+F 3 "~" H 3500 4050 50  0001 C CNN
+	1    3500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D205
+U 1 1 5FC4EFF4
+P 3500 3650
+F 0 "D205" V 3539 3532 50  0000 R CNN
+F 1 "LED_C" V 3448 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3500 3650 50  0001 C CNN
+F 3 "~" H 3500 3650 50  0001 C CNN
+	1    3500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R204
+U 1 1 5FC4E24A
+P 3000 4050
+F 0 "R204" H 3070 4096 50  0000 L CNN
+F 1 "4.7K" H 3070 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2930 4050 50  0001 C CNN
+F 3 "~" H 3000 4050 50  0001 C CNN
+	1    3000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D204
+U 1 1 5FC4E244
+P 3000 3650
+F 0 "D204" V 3039 3532 50  0000 R CNN
+F 1 "LED_C" V 2948 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3000 3650 50  0001 C CNN
+F 3 "~" H 3000 3650 50  0001 C CNN
+	1    3000 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 5FC4D07A
+P 2500 4050
+F 0 "R203" H 2570 4096 50  0000 L CNN
+F 1 "4.7K" H 2570 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2430 4050 50  0001 C CNN
+F 3 "~" H 2500 4050 50  0001 C CNN
+	1    2500 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D203
+U 1 1 5FC4D074
+P 2500 3650
+F 0 "D203" V 2539 3532 50  0000 R CNN
+F 1 "LED_B" V 2448 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 3650 50  0001 C CNN
+F 3 "~" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R202
+U 1 1 5FC4C53A
+P 2000 4050
+F 0 "R202" H 2070 4096 50  0000 L CNN
+F 1 "4.7K" H 2070 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1930 4050 50  0001 C CNN
+F 3 "~" H 2000 4050 50  0001 C CNN
+	1    2000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D202
+U 1 1 5FC4C534
+P 2000 3650
+F 0 "D202" V 2039 3532 50  0000 R CNN
+F 1 "LED_B" V 1948 3532 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2000 3650 50  0001 C CNN
+F 3 "~" H 2000 3650 50  0001 C CNN
+	1    2000 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 3400 2000 3400
+Wire Wire Line
+	1500 3400 1500 3500
+Wire Wire Line
+	1500 3800 1500 3900
+Wire Wire Line
+	1500 4200 1500 4400
+Wire Wire Line
+	2000 3400 2000 3500
+Wire Wire Line
+	2000 4300 2250 4300
+Wire Wire Line
+	2500 4300 2500 4200
+Wire Wire Line
+	2500 3900 2500 3800
+Wire Wire Line
+	2500 3500 2500 3400
+Wire Wire Line
+	2000 4200 2000 4300
+Wire Wire Line
+	2000 3800 2000 3900
+Connection ~ 2000 3400
+Wire Wire Line
+	2000 3400 2500 3400
+Connection ~ 2500 3400
+Wire Wire Line
+	2500 3400 3000 3400
+Wire Wire Line
+	3000 3400 3000 3500
+Wire Wire Line
+	3000 4300 3250 4300
+Wire Wire Line
+	3500 4300 3500 4200
+Wire Wire Line
+	3500 3900 3500 3800
+Wire Wire Line
+	3500 3500 3500 3400
+Wire Wire Line
+	3000 4200 3000 4300
+Wire Wire Line
+	3000 3800 3000 3900
+Connection ~ 3000 3400
+Wire Wire Line
+	3000 3400 3500 3400
+Connection ~ 3500 3400
+Wire Wire Line
+	3500 3400 4000 3400
+Wire Wire Line
+	4000 3400 4000 3500
+Wire Wire Line
+	4000 4300 4250 4300
+Wire Wire Line
+	4500 4300 4500 4200
+Wire Wire Line
+	4500 3900 4500 3800
+Wire Wire Line
+	4500 3500 4500 3400
+Wire Wire Line
+	4000 4200 4000 4300
+Wire Wire Line
+	4000 3800 4000 3900
+Connection ~ 4000 3400
+Wire Wire Line
+	4000 3400 4500 3400
+Wire Wire Line
+	2250 4300 2250 4400
+Connection ~ 2250 4300
+Wire Wire Line
+	2250 4300 2500 4300
+Wire Wire Line
+	3250 4300 3250 4400
+Connection ~ 3250 4300
+Wire Wire Line
+	3250 4300 3500 4300
+Wire Wire Line
+	4250 4300 4250 4400
+Connection ~ 4250 4300
+Wire Wire Line
+	4250 4300 4500 4300
+Wire Wire Line
+	3000 3300 3000 3400
+Text Label 3000 3300 2    50   ~ 0
+VCC_200
+Text Label 1500 4400 0    50   ~ 0
+A_200
+Text Label 2250 4400 0    50   ~ 0
+B_200
+Text Label 3250 4400 0    50   ~ 0
+C_200
+Text Label 4250 4400 0    50   ~ 0
+D_200
+Text Notes 1500 5050 0    50   ~ 0
+LED layout:\n\nC   D\nB A B\nD   C
+Text Notes 2150 5300 0    50   ~ 0
+Points:\n\n1 - 0001 - 0x01 - A\n2 - 0100 - 0x04 - C\n3 - 1001 - 0x09 - AD\n4 - 1100 - 0x0C - CD\n5 - 1101 - 0x0D - ACD\n6 - 1110 - 0x0E - BCD
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5FC6ECB1
+P 4500 5000
+F 0 "#FLG0104" H 4500 5075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4500 5173 50  0000 C CNN
+F 2 "" H 4500 5000 50  0001 C CNN
+F 3 "~" H 4500 5000 50  0001 C CNN
+	1    4500 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5FC6F781
+P 4900 5150
+F 0 "#FLG0105" H 4900 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 4900 5323 50  0000 C CNN
+F 2 "" H 4900 5150 50  0001 C CNN
+F 3 "~" H 4900 5150 50  0001 C CNN
+	1    4900 5150
+	-1   0    0    1   
+$EndComp
+Text Label 4500 5000 3    50   ~ 0
+GND_200
+Text Label 4900 5150 1    50   ~ 0
+VCC_200
+$Comp
+L Connector_Generic:Conn_01x04 J201
+U 1 1 5FC71E5B
+P 5100 2550
+F 0 "J201" H 5180 2542 50  0000 L CNN
+F 1 "ISP" H 5180 2451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 5100 2550 50  0001 C CNN
+F 3 "~" H 5100 2550 50  0001 C CNN
+	1    5100 2550
+	1    0    0    -1  
+$EndComp
+Text Label 4900 2450 2    50   ~ 0
+VCC_200
+Text Label 4900 2750 2    50   ~ 0
+GND_200
+Text Label 4900 2550 2    50   ~ 0
+A_200
+Text Label 4900 2650 2    50   ~ 0
+B_200
+$EndSCHEMATC
