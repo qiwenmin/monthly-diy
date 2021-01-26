@@ -1,0 +1,383 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "MiniCore/UNO"
+Date "2021-01-24"
+Rev "v1"
+Comp "BG1REN"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 600CD5EA
+P 1500 2200
+F 0 "A1" H 1500 3550 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 1500 3450 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3_WithMountingHoles" H 1500 2200 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 1500 2200 50  0001 C CNN
+	1    1500 2200
+	1    0    0    -1  
+$EndComp
+Text Label 2000 1600 0    50   ~ 0
+~RESET
+Text Label 2000 1800 0    50   ~ 0
+IOREF
+Text Label 2000 2000 0    50   ~ 0
+AREF
+Text Label 2000 2200 0    50   ~ 0
+A0
+Text Label 2000 2300 0    50   ~ 0
+A1
+Text Label 2000 2400 0    50   ~ 0
+A2
+Text Label 2000 2500 0    50   ~ 0
+A3
+Text Label 2000 2600 0    50   ~ 0
+A4
+Text Label 2000 2700 0    50   ~ 0
+A5
+Text Label 2000 2900 0    50   ~ 0
+SDA
+Text Label 2000 3000 0    50   ~ 0
+SCL
+Text Label 1600 3300 3    50   ~ 0
+GND
+Text Label 1500 3300 3    50   ~ 0
+GND
+Text Label 1400 3300 3    50   ~ 0
+GND
+Text Label 1000 1600 2    50   ~ 0
+D0_RX
+Text Label 1000 1700 2    50   ~ 0
+D1_TX
+Text Label 1000 1800 2    50   ~ 0
+D2
+Text Label 1000 1900 2    50   ~ 0
+D3
+Text Label 1000 2000 2    50   ~ 0
+D4
+Text Label 1000 2100 2    50   ~ 0
+D5
+Text Label 1000 2200 2    50   ~ 0
+D6
+Text Label 1000 2300 2    50   ~ 0
+D7
+Text Label 1000 2400 2    50   ~ 0
+D8
+Text Label 1000 2500 2    50   ~ 0
+D9
+Text Label 1000 2600 2    50   ~ 0
+D10
+Text Label 1000 2700 2    50   ~ 0
+D11
+Text Label 1000 2800 2    50   ~ 0
+D12
+Text Label 1000 2900 2    50   ~ 0
+D13
+Text Label 1400 1200 1    50   ~ 0
+VIN
+Text Label 1600 1200 1    50   ~ 0
++3V3
+Text Label 1700 1200 1    50   ~ 0
++5V
+$Comp
+L power:+5V #PWR0106
+U 1 1 600EEAF1
+P 5600 1000
+F 0 "#PWR0106" H 5600 850 50  0001 C CNN
+F 1 "+5V" H 5615 1173 50  0000 C CNN
+F 2 "" H 5600 1000 50  0001 C CNN
+F 3 "" H 5600 1000 50  0001 C CNN
+	1    5600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 600EF86F
+P 5600 1100
+F 0 "R1" H 5659 1146 50  0000 L CNN
+F 1 "4.7K" H 5659 1055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5600 1100 50  0001 C CNN
+F 3 "~" H 5600 1100 50  0001 C CNN
+	1    5600 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D1
+U 1 1 600F067D
+P 5600 1400
+F 0 "D1" V 5646 1330 50  0000 R CNN
+F 1 "ON" V 5555 1330 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" V 5600 1400 50  0001 C CNN
+F 3 "~" V 5600 1400 50  0001 C CNN
+	1    5600 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 600F13CC
+P 5600 1500
+F 0 "#PWR0107" H 5600 1250 50  0001 C CNN
+F 1 "GND" H 5605 1327 50  0000 C CNN
+F 2 "" H 5600 1500 50  0001 C CNN
+F 3 "" H 5600 1500 50  0001 C CNN
+	1    5600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 1200 5600 1300
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6020A6DE
+P 6500 1300
+F 0 "SW1" V 6546 1252 50  0000 R CNN
+F 1 "RESET" V 6455 1252 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6500 1500 50  0001 C CNN
+F 3 "~" H 6500 1500 50  0001 C CNN
+	1    6500 1300
+	0    -1   -1   0   
+$EndComp
+Text Label 6500 1100 1    50   ~ 0
+~RESET
+$Comp
+L power:GND #PWR0131
+U 1 1 6020B7C2
+P 6500 1500
+F 0 "#PWR0131" H 6500 1250 50  0001 C CNN
+F 1 "GND" H 6505 1327 50  0000 C CNN
+F 2 "" H 6500 1500 50  0001 C CNN
+F 3 "" H 6500 1500 50  0001 C CNN
+	1    6500 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J1
+U 1 1 6020D366
+P 3850 1450
+F 0 "J1" H 3900 1767 50  0000 C CNN
+F 1 "ICSP" H 3900 1676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3850 1450 50  0001 C CNN
+F 3 "~" H 3850 1450 50  0001 C CNN
+	1    3850 1450
+	1    0    0    -1  
+$EndComp
+Text Label 3650 1550 2    50   ~ 0
+~RESET
+$Comp
+L power:GND #PWR0132
+U 1 1 6020E1EE
+P 4150 1550
+F 0 "#PWR0132" H 4150 1300 50  0001 C CNN
+F 1 "GND" H 4155 1377 50  0000 C CNN
+F 2 "" H 4150 1550 50  0001 C CNN
+F 3 "" H 4150 1550 50  0001 C CNN
+	1    4150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0133
+U 1 1 6020E853
+P 4150 1350
+F 0 "#PWR0133" H 4150 1200 50  0001 C CNN
+F 1 "+5V" H 4165 1523 50  0000 C CNN
+F 2 "" H 4150 1350 50  0001 C CNN
+F 3 "" H 4150 1350 50  0001 C CNN
+	1    4150 1350
+	1    0    0    -1  
+$EndComp
+Text Label 4150 1450 0    50   ~ 0
+D11
+Text Label 3650 1350 2    50   ~ 0
+D12
+Text Label 3650 1450 2    50   ~ 0
+D13
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60223F71
+P 10400 6050
+F 0 "#FLG0101" H 10400 6125 50  0001 C CNN
+F 1 "PWR_FLAG" H 10400 6223 50  0000 C CNN
+F 2 "" H 10400 6050 50  0001 C CNN
+F 3 "~" H 10400 6050 50  0001 C CNN
+	1    10400 6050
+	-1   0    0    1   
+$EndComp
+Text Label 10400 6050 1    50   ~ 0
+VIN
+$Comp
+L power:GND #PWR0101
+U 1 1 6011E7A6
+P 9950 6050
+F 0 "#PWR0101" H 9950 5800 50  0001 C CNN
+F 1 "GND" H 9955 5877 50  0000 C CNN
+F 2 "" H 9950 6050 50  0001 C CNN
+F 3 "" H 9950 6050 50  0001 C CNN
+	1    9950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6011F272
+P 9950 6050
+F 0 "#FLG0102" H 9950 6125 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 6223 50  0000 C CNN
+F 2 "" H 9950 6050 50  0001 C CNN
+F 3 "~" H 9950 6050 50  0001 C CNN
+	1    9950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 60104254
+P 7200 950
+F 0 "#PWR03" H 7200 800 50  0001 C CNN
+F 1 "+5V" H 7215 1123 50  0000 C CNN
+F 2 "" H 7200 950 50  0001 C CNN
+F 3 "" H 7200 950 50  0001 C CNN
+	1    7200 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 601046B9
+P 7200 1600
+F 0 "#PWR04" H 7200 1350 50  0001 C CNN
+F 1 "GND" H 7205 1427 50  0000 C CNN
+F 2 "" H 7200 1600 50  0001 C CNN
+F 3 "" H 7200 1600 50  0001 C CNN
+	1    7200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 60104D77
+P 7200 1050
+F 0 "R4" H 7259 1096 50  0000 L CNN
+F 1 "10K" H 7259 1005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7200 1050 50  0001 C CNN
+F 3 "~" H 7200 1050 50  0001 C CNN
+	1    7200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 60105551
+P 7200 1400
+F 0 "SW2" V 7246 1352 50  0000 R CNN
+F 1 "BTN" V 7155 1352 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7200 1600 50  0001 C CNN
+F 3 "~" H 7200 1600 50  0001 C CNN
+	1    7200 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 6010ACD3
+P 5600 2100
+F 0 "J2" V 5564 2012 50  0000 R CNN
+F 1 "LED1" V 5473 2012 50  0000 R CNN
+F 2 "bg1ren:FreeSolderWirePad_1x01_Drill0.8mm" H 5600 2100 50  0001 C CNN
+F 3 "~" H 5600 2100 50  0001 C CNN
+	1    5600 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 6010BB44
+P 5600 2400
+F 0 "R2" H 5659 2446 50  0000 L CNN
+F 1 "4.7K" H 5659 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5600 2400 50  0001 C CNN
+F 3 "~" H 5600 2400 50  0001 C CNN
+	1    5600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D2
+U 1 1 6010C0D6
+P 5600 2600
+F 0 "D2" V 5646 2530 50  0000 R CNN
+F 1 "LED1" V 5555 2530 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" V 5600 2600 50  0001 C CNN
+F 3 "~" V 5600 2600 50  0001 C CNN
+	1    5600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 6010C9E0
+P 5600 2700
+F 0 "#PWR01" H 5600 2450 50  0001 C CNN
+F 1 "GND" H 5605 2527 50  0000 C CNN
+F 2 "" H 5600 2700 50  0001 C CNN
+F 3 "" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J3
+U 1 1 6010EC65
+P 6500 2100
+F 0 "J3" V 6464 2012 50  0000 R CNN
+F 1 "LED2" V 6373 2012 50  0000 R CNN
+F 2 "bg1ren:FreeSolderWirePad_1x01_Drill0.8mm" H 6500 2100 50  0001 C CNN
+F 3 "~" H 6500 2100 50  0001 C CNN
+	1    6500 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 6010EC6B
+P 6500 2400
+F 0 "R3" H 6559 2446 50  0000 L CNN
+F 1 "4.7K" H 6559 2355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6500 2400 50  0001 C CNN
+F 3 "~" H 6500 2400 50  0001 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 6010EC71
+P 6500 2600
+F 0 "D3" V 6546 2530 50  0000 R CNN
+F 1 "LED2" V 6455 2530 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" V 6500 2600 50  0001 C CNN
+F 3 "~" V 6500 2600 50  0001 C CNN
+	1    6500 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6010EC77
+P 6500 2700
+F 0 "#PWR02" H 6500 2450 50  0001 C CNN
+F 1 "GND" H 6505 2527 50  0000 C CNN
+F 2 "" H 6500 2700 50  0001 C CNN
+F 3 "" H 6500 2700 50  0001 C CNN
+	1    6500 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 1150 7200 1200
+Wire Wire Line
+	7200 1200 7400 1200
+Connection ~ 7200 1200
+$Comp
+L Connector_Generic:Conn_01x01 J4
+U 1 1 6011F8C3
+P 7600 1200
+F 0 "J4" H 7680 1242 50  0000 L CNN
+F 1 "SW" H 7680 1151 50  0000 L CNN
+F 2 "bg1ren:FreeSolderWirePad_1x01_Drill0.8mm" H 7600 1200 50  0001 C CNN
+F 3 "~" H 7600 1200 50  0001 C CNN
+	1    7600 1200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
