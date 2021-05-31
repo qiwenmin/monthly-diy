@@ -161,99 +161,99 @@ Text Label 2150 2450 3    50   ~ 0
 $Comp
 L Connector_Generic:Conn_01x02 J101
 U 1 1 60B43D97
+P 3800 750
+F 0 "J101" H 3880 742 50  0000 L CNN
+F 1 "PWR" H 3880 651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 750 50  0001 C CNN
+F 3 "~" H 3800 750 50  0001 C CNN
+	1    3800 750 
+	1    0    0    -1  
+$EndComp
+Text Label 3600 750  2    50   ~ 0
+100_+9V
+Text Label 3600 850  2    50   ~ 0
+100_GND
+$Comp
+L Connector_Generic:Conn_01x02 J102
+U 1 1 60B460A7
 P 3800 1100
-F 0 "J101" H 3880 1092 50  0000 L CNN
-F 1 "PWR" H 3880 1001 50  0000 L CNN
+F 0 "J102" H 3880 1092 50  0000 L CNN
+F 1 "IN" H 3880 1001 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 1100 50  0001 C CNN
 F 3 "~" H 3800 1100 50  0001 C CNN
 	1    3800 1100
 	1    0    0    -1  
 $EndComp
 Text Label 3600 1100 2    50   ~ 0
-100_+9V
+100_AF_IN
 Text Label 3600 1200 2    50   ~ 0
 100_GND
 $Comp
-L Connector_Generic:Conn_01x02 J102
-U 1 1 60B460A7
+L Connector_Generic:Conn_01x02 J103
+U 1 1 60B469E5
 P 3800 1450
-F 0 "J102" H 3880 1442 50  0000 L CNN
-F 1 "IN" H 3880 1351 50  0000 L CNN
+F 0 "J103" H 3880 1442 50  0000 L CNN
+F 1 "OUT" H 3880 1351 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 1450 50  0001 C CNN
 F 3 "~" H 3800 1450 50  0001 C CNN
 	1    3800 1450
 	1    0    0    -1  
 $EndComp
 Text Label 3600 1450 2    50   ~ 0
-100_AF_IN
-Text Label 3600 1550 2    50   ~ 0
-100_GND
-$Comp
-L Connector_Generic:Conn_01x02 J103
-U 1 1 60B469E5
-P 3800 1850
-F 0 "J103" H 3880 1842 50  0000 L CNN
-F 1 "OUT" H 3880 1751 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 1850 50  0001 C CNN
-F 3 "~" H 3800 1850 50  0001 C CNN
-	1    3800 1850
-	1    0    0    -1  
-$EndComp
-Text Label 3600 1850 2    50   ~ 0
 100_AF_OUT
-Text Label 3600 1950 2    50   ~ 0
+Text Label 3600 1550 2    50   ~ 0
 100_GND
 $Comp
 L Connector_Generic:Conn_01x02 J104
 U 1 1 60B4750B
-P 3800 2250
-F 0 "J104" H 3880 2242 50  0000 L CNN
-F 1 "GAIN" H 3880 2151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 2250 50  0001 C CNN
-F 3 "~" H 3800 2250 50  0001 C CNN
-	1    3800 2250
+P 3800 1800
+F 0 "J104" H 3880 1792 50  0000 L CNN
+F 1 "GAIN" H 3880 1701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 1800 50  0001 C CNN
+F 3 "~" H 3800 1800 50  0001 C CNN
+	1    3800 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP_Small C106
 U 1 1 60B47AB5
-P 3500 2350
-F 0 "C106" V 3400 2550 50  0000 R CNN
-F 1 "10u" V 3400 2300 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3500 2350 50  0001 C CNN
-F 3 "~" H 3500 2350 50  0001 C CNN
-	1    3500 2350
+P 3500 1900
+F 0 "C106" V 3400 2100 50  0000 R CNN
+F 1 "10u" V 3400 1850 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3500 1900 50  0001 C CNN
+F 3 "~" H 3500 1900 50  0001 C CNN
+	1    3500 1900
 	0    -1   -1   0   
 $EndComp
-Text Label 3400 2350 2    50   ~ 0
+Text Label 3400 1900 2    50   ~ 0
 100_GAIN+
-Text Label 3600 2250 2    50   ~ 0
+Text Label 3600 1800 2    50   ~ 0
 100_GAIN-
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 60B518D7
-P 3600 750
-F 0 "#FLG0101" H 3600 825 50  0001 C CNN
-F 1 "PWR_FLAG" V 3600 878 50  0000 L CNN
-F 2 "" H 3600 750 50  0001 C CNN
-F 3 "~" H 3600 750 50  0001 C CNN
-	1    3600 750 
+P 950 2800
+F 0 "#FLG0101" H 950 2875 50  0001 C CNN
+F 1 "PWR_FLAG" V 950 2928 50  0000 L CNN
+F 2 "" H 950 2800 50  0001 C CNN
+F 3 "~" H 950 2800 50  0001 C CNN
+	1    950  2800
 	0    1    1    0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 60B575FE
-P 3600 850
-F 0 "#FLG0102" H 3600 925 50  0001 C CNN
-F 1 "PWR_FLAG" V 3600 978 50  0000 L CNN
-F 2 "" H 3600 850 50  0001 C CNN
-F 3 "~" H 3600 850 50  0001 C CNN
-	1    3600 850 
+P 950 2900
+F 0 "#FLG0102" H 950 2975 50  0001 C CNN
+F 1 "PWR_FLAG" V 950 3028 50  0000 L CNN
+F 2 "" H 950 2900 50  0001 C CNN
+F 3 "~" H 950 2900 50  0001 C CNN
+	1    950  2900
 	0    1    1    0   
 $EndComp
-Text Label 3600 750  2    50   ~ 0
+Text Label 950  2800 2    50   ~ 0
 100_+9V
-Text Label 3600 850  2    50   ~ 0
+Text Label 950  2900 2    50   ~ 0
 100_GND
 $Comp
 L Device:LED_Small D101
@@ -283,4 +283,76 @@ Text Label 2150 900  2    50   ~ 0
 100_+9V
 Wire Wire Line
 	2350 900  2450 900 
+$Comp
+L Connector:AudioJack3_SwitchTR J106
+U 1 1 60B4E227
+P 3600 2950
+F 0 "J106" H 3320 2783 50  0000 R CNN
+F 1 "OUT" H 3320 2874 50  0000 R CNN
+F 2 "bg1ren:Tayda_3.5mm_stereo_TRS_jack_A-853" H 3600 2950 50  0001 C CNN
+F 3 "~" H 3600 2950 50  0001 C CNN
+	1    3600 2950
+	-1   0    0    1   
+$EndComp
+Text Label 3400 2750 2    50   ~ 0
+100_AF_OUT
+Text Label 3400 2950 2    50   ~ 0
+100_AF_OUT
+Text Label 3400 3050 2    50   ~ 0
+100_GND
+NoConn ~ 3400 2650
+NoConn ~ 3400 2850
+$Comp
+L Connector_Generic:Conn_01x03 J107
+U 1 1 60B524D4
+P 2600 2950
+F 0 "J107" H 2518 3267 50  0000 C CNN
+F 1 "OUT" H 2518 3176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 2950 50  0001 C CNN
+F 3 "~" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2750 2950 2750
+Wire Wire Line
+	2950 2750 2950 2850
+Wire Wire Line
+	2950 2850 2850 2850
+$Comp
+L Connector_Generic:Conn_01x03 J108
+U 1 1 60B5A3F2
+P 2600 3500
+F 0 "J108" H 2518 3817 50  0000 C CNN
+F 1 "OUT" H 2518 3726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2600 3500 50  0001 C CNN
+F 3 "~" H 2600 3500 50  0001 C CNN
+	1    2600 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3050 3050 3050
+Wire Wire Line
+	3400 2950 2950 2950
+Wire Wire Line
+	2950 2950 2950 3500
+Wire Wire Line
+	2950 3500 2800 3500
+Connection ~ 2950 2950
+Wire Wire Line
+	2950 2950 2800 2950
+Wire Wire Line
+	3050 3050 3050 3600
+Wire Wire Line
+	3050 3600 2800 3600
+Connection ~ 3050 3050
+Wire Wire Line
+	3050 3050 2800 3050
+Wire Wire Line
+	2850 2850 2850 3400
+Wire Wire Line
+	2850 3400 2800 3400
+Connection ~ 2850 2850
+Wire Wire Line
+	2850 2850 2800 2850
 $EndSCHEMATC
