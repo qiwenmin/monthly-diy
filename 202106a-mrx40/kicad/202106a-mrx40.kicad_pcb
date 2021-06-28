@@ -1158,7 +1158,7 @@
       (net 18 "Net-(R3-Pad1)"))
     (pad 3 thru_hole circle (at 0 -5 270) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 3 /5V))
-    (model ${BG1REN_EE_LIBS_KICAD}/bg1ren.3dshapes/RK0971110-L15.STEP
+    (model ${BG1REN_EE_LIBS_KICAD}/bg1ren.3dshapes/RK0971-L-15KC_N-5-green.step
       (offset (xyz 5 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
@@ -1217,7 +1217,7 @@
       (net 17 "Net-(R1-Pad2)"))
     (pad 3 thru_hole circle (at 0 -5 270) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 13 /ANT))
-    (model ${BG1REN_EE_LIBS_KICAD}/bg1ren.3dshapes/RK0971111-L15.STEP
+    (model ${BG1REN_EE_LIBS_KICAD}/bg1ren.3dshapes/RK0971S-L-15KC_N-5-green.step
       (offset (xyz 5 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 -90))
