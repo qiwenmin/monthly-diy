@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bg1ren)(type Legacy)(uri ${BG1REN_EE_LIBS_KICAD}/bg1ren.lib)(options "")(descr ""))
+  (lib (name 202108b-keyer2x2-prototype-rescue)(type Legacy)(uri ${KIPRJMOD}/202108b-keyer2x2-prototype-rescue.lib)(options "")(descr ""))
+)
