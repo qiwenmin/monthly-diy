@@ -4,3 +4,6 @@
 *.zip
 output/
 build/
+*.dsn
+*.rules
+*.ses
