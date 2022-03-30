@@ -10,6 +10,6 @@ projname=$1
 echo "Creating $projname project..."
 
 cp -r template $projname
-mv $projname/kicad/projectname.pro $projname/kicad/$projname.pro
-mv $projname/kicad/projectname.sch $projname/kicad/$projname.sch
+mv $projname/kicad/projectname.kicad_pro $projname/kicad/$projname.kicad_pro
+mv $projname/kicad/projectname.kicad_sch $projname/kicad/$projname.kicad_sch
 echo "# $projname" > $projname/README.md
